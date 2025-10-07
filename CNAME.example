@@ -1,0 +1,21 @@
+# CNAME 配置示例
+#
+# 如果你有自己的域名，可以配置自定义域名：
+#
+# 1. 将此文件重命名为 CNAME（去掉 .example）
+# 2. 在下方填写你的域名（例如：claude-code.example.com）
+# 3. 在你的域名 DNS 设置中添加 CNAME 记录：
+#    类型: CNAME
+#    名称: @ 或 www 或子域名
+#    值: chemark.github.io
+# 4. 提交到 GitHub
+# 5. 在 GitHub 仓库 Settings > Pages 中验证自定义域名
+#
+# 示例：
+# your-domain.com
+# 或
+# claude-code.your-domain.com
+#
+# 不配置自定义域名？
+# 删除此文件即可，使用默认地址：
+# https://chemark.github.io/claude-code-learning/

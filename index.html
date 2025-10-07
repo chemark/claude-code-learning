@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Claude Code 完整学习计划 - 从基础到精通的系统化中文教程，包含7个模块、40+练习、3个实战项目">
+    <meta name="keywords" content="Claude Code, AI编程, 教程, 学习计划, 中文教程, 人工智能">
+    <meta name="author" content="Claude Code Learning Community">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chemark.github.io/claude-code-learning/">
+    <meta property="og:title" content="Claude Code 完整学习计划">
+    <meta property="og:description" content="系统学习 Claude Code，从基础到精通，通过实践掌握 AI 辅助编程的强大能力">
+    <meta property="og:image" content="https://docs.anthropic.com/images/claude-code-social.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://chemark.github.io/claude-code-learning/">
+    <meta property="twitter:title" content="Claude Code 完整学习计划">
+    <meta property="twitter:description" content="系统学习 Claude Code，从基础到精通，通过实践掌握 AI 辅助编程的强大能力">
+    <meta property="twitter:image" content="https://docs.anthropic.com/images/claude-code-social.png">
+
+    <title>🚀 Claude Code 完整学习计划 - 从基础到精通</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 20px;
+        }
+
+        .badges img {
+            height: 20px;
+        }
+
+        .content {
+            padding: 50px 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
+        }
+
+        .feature-card h3 {
+            color: #667eea;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .modules {
+            display: grid;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .module {
+            background: linear-gradient(to right, #f8f9fa, #fff);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #764ba2;
+            transition: all 0.3s ease;
+        }
+
+        .module:hover {
+            border-left-width: 8px;
+            padding-left: 24px;
+            box-shadow: 0 5px 15px rgba(118, 75, 162, 0.15);
+        }
+
+        .module h3 {
+            color: #764ba2;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+
+        .module p {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+
+        .btn-secondary:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea15, #764ba215);
+            border-radius: 12px;
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #667eea;
+            display: block;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 30px 40px;
+            text-align: center;
+            color: #666;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .header p {
+                font-size: 1em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Claude Code 完整学习计划</h1>
+            <p>系统学习 Claude Code，从基础到精通，通过实践掌握 AI 辅助编程的强大能力</p>
+            <div class="badges">
+                <a href="https://github.com/chemark/claude-code-learning/stargazers"><img src="https://img.shields.io/github/stars/chemark/claude-code-learning?style=social" alt="Stars"></a>
+                <a href="https://github.com/chemark/claude-code-learning/network/members"><img src="https://img.shields.io/github/forks/chemark/claude-code-learning?style=social" alt="Forks"></a>
+                <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License">
+                <img src="https://img.shields.io/badge/Claude%20Code-v2.0-blue" alt="Claude Code">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2><span class="emoji">📊</span>项目统计</h2>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-number">7</span>
+                        <div class="stat-label">学习模块</div>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">40+</span>
+                        <div class="stat-label">实践练习</div>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <div class="stat-label">实战项目</div>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">6-8</span>
+                        <div class="stat-label">学习周数</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><span class="emoji">✨</span>核心特点</h2>
+                <div class="features">
+                    <div class="feature-card">
+                        <h3>📚 系统化学习</h3>
+                        <p>7个完整模块，从基础到高级，循序渐进</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>💪 实践导向</h3>
+                        <p>40+练习和3个完整实战项目</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🔧 工具齐全</h3>
+                        <p>6个自定义命令，开箱即用</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>📖 中文文档</h3>
+                        <p>完整的中文学习资源</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🆘 支持完善</h3>
+                        <p>15+问题故障排查指南</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🚀 持续更新</h3>
+                        <p>紧跟 Claude Code 最新特性</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><span class="emoji">🗂️</span>学习模块</h2>
+                <div class="modules">
+                    <div class="module">
+                        <h3>模块 1: Claude Code 基础认知</h3>
+                        <p>安装、配置、基本交互，掌握核心概念</p>
+                    </div>
+                    <div class="module">
+                        <h3>模块 2: 核心工具与工作流</h3>
+                        <p>Read, Write, Edit, Glob, Grep, Bash 工具详解</p>
+                    </div>
+                    <div class="module">
+                        <h3>模块 3: Git 集成与版本控制</h3>
+                        <p>Git 操作、提交规范、PR 工作流</p>
+                    </div>
+                    <div class="module">
+                        <h3>模块 4: 自定义扩展 I - Slash Commands</h3>
+                        <p>创建自定义命令，提升工作效率</p>
+                    </div>
+                    <div class="module">
+                        <h3>模块 5: 自定义扩展 II - Hooks 与自动化</h3>
+                        <p>配置 Hooks，实现自动化质量检查</p>
+                    </div>
+                    <div class="module">
+                        <h3>模块 6: 外部集成 - MCP 与 Sub-Agents</h3>
+                        <p>MCP 集成、Sub-Agents 使用，连接外部世界</p>
+                    </div>
+                    <div class="module">
+                        <h3>模块 7: 综合实战项目</h3>
+                        <p>3个完整项目：博客系统、任务管理、开源贡献</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="README.md" class="btn btn-primary">开始学习</a>
+                <a href="QUICK_START.md" class="btn btn-secondary">快速开始</a>
+                <a href="https://github.com/chemark/claude-code-learning" class="btn btn-secondary">GitHub 仓库</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>用 ❤️ 和 🤖 Claude Code 制作</p>
+            <p style="margin-top: 10px;">
+                <a href="https://github.com/chemark/claude-code-learning">GitHub</a> ·
+                <a href="https://github.com/chemark/claude-code-learning/issues">反馈问题</a> ·
+                <a href="LICENSE">MIT License</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

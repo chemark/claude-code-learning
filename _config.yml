@@ -1,0 +1,95 @@
+# Site settings
+title: Claude Code 完整学习计划
+description: >-
+  系统学习 Claude Code，从基础到精通，通过实践掌握 AI 辅助编程的强大能力。
+  包含7个模块、40+练习、3个实战项目的完整中文教程。
+
+baseurl: "/claude-code-learning"
+url: "https://chemark.github.io"
+
+# Author
+author:
+  name: Claude Code Learning Community
+  email:
+  github: chemark
+
+# Social links
+github_username: chemark
+repository: chemark/claude-code-learning
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# SEO settings
+lang: zh-CN
+logo: /favicon.svg
+
+# Social media
+twitter:
+  username:
+  card: summary_large_image
+
+# GitHub metadata
+github: [metadata]
+
+# Google Analytics (uncomment and add your ID if needed)
+# google_analytics: UA-XXXXXXXXX-X
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .DS_Store
+  - .gitignore
+  - .github
+  - .claude
+  - projects/*/node_modules
+  - projects/*/dist
+  - projects/*/build
+  - "*.backup"
+  - "*.bak"
+  - "*-old"
+
+# Collections
+collections:
+  modules:
+    output: true
+    permalink: /:collection/:name
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "modules"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Reading files
+include:
+  - .htaccess
+  - _pages
+
+# Markdown settings
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  syntax_highlighter: rouge
+
+# Sass
+sass:
+  style: compressed
