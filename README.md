@@ -8,7 +8,10 @@
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-v2.0-blue)](https://docs.claude.com/en/docs/claude-code/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/chemark/claude-code-learning/pulls)
 [![GitHub issues](https://img.shields.io/github/issues/chemark/claude-code-learning)](https://github.com/chemark/claude-code-learning/issues)
+[![在线阅读](https://img.shields.io/badge/在线阅读-GitHub_Pages-success)](https://chemark.github.io/claude-code-learning/)
 [![中文文档](https://img.shields.io/badge/文档-中文-red)](README.md)
+
+**📚 [在线阅读文档](https://chemark.github.io/claude-code-learning/)** | **⚡ [快速开始](./QUICK_START.md)** | **📖 [学习计划](./LEARNING_PLAN.md)**
 
 ## 📖 关于本项目
 
