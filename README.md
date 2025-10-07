@@ -2,8 +2,13 @@
 
 > 系统学习 Claude Code，从基础到精通，通过实践掌握 AI 辅助编程的强大能力
 
-[![Claude Code](https://img.shields.io/badge/Claude%20Code-Learn-blue)](https://docs.claude.com/en/docs/claude-code/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/chemark/claude-code-learning?style=social)](https://github.com/chemark/claude-code-learning/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/chemark/claude-code-learning?style=social)](https://github.com/chemark/claude-code-learning/network/members)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-v2.0-blue)](https://docs.claude.com/en/docs/claude-code/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/chemark/claude-code-learning/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/chemark/claude-code-learning)](https://github.com/chemark/claude-code-learning/issues)
+[![中文文档](https://img.shields.io/badge/文档-中文-red)](README.md)
 
 ## 📖 关于本项目
 
@@ -246,16 +251,56 @@ cat LEARNING_PLAN.md
 | ... | ... | ... | ... | ... | ... |
 ```
 
+## 🤝 贡献指南
+
+欢迎贡献！你可以通过以下方式参与：
+
+- 🐛 [报告 Bug](https://github.com/chemark/claude-code-learning/issues/new?labels=bug)
+- 💡 [提出新功能建议](https://github.com/chemark/claude-code-learning/issues/new?labels=enhancement)
+- 📝 改进文档和示例
+- ⭐ 给项目点个 Star
+- 🔗 分享给更多人
+
+### 贡献步骤
+
+1. Fork 本项目
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 提交 Pull Request
+
+## 💬 社区交流
+
+- 💬 [GitHub Discussions](https://github.com/chemark/claude-code-learning/discussions) - 提问、讨论、分享经验
+- 🐛 [GitHub Issues](https://github.com/chemark/claude-code-learning/issues) - 报告问题
+- ⭐ [Star 项目](https://github.com/chemark/claude-code-learning) - 支持我们
+
+## 📊 项目统计
+
+![Alt](https://repobeats.axiom.co/api/embed/placeholder.svg "Repobeats analytics image")
+
 ## 📄 License
 
 MIT License - 详见 [LICENSE](./LICENSE) 文件
 
 ## 🌟 致谢
 
-感谢 Anthropic 团队开发了如此强大的工具！
+- 感谢 [Anthropic](https://www.anthropic.com/) 团队开发了 Claude Code
+- 感谢所有贡献者和学习者
+- 感谢开源社区的支持
+
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=chemark/claude-code-learning&type=Date)](https://star-history.com/#chemark/claude-code-learning&Date)
 
 ---
 
 **准备好了吗？开始你的 Claude Code 学习之旅吧！** 🚀
 
 👉 [开始快速体验](./QUICK_START.md) | [查看完整计划](./LEARNING_PLAN.md) | [进入模块 1](./module-1/README.md)
+
+---
+
+<div align="center">
+  <sub>用 ❤️ 和 🤖 Claude Code 制作</sub>
+</div>
