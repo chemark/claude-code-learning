@@ -32,6 +32,9 @@
 - [19. 模型切换](#tip-19)
 - [20. 批量处理](#tip-20)
 
+### 🔌 集成与扩展
+- [21. IDE 集成](#tip-21)
+
 ---
 
 <a name="tip-1"></a>
@@ -2213,6 +2216,385 @@ done
 
 ---
 
+<a name="tip-21"></a>
+## 21. IDE 集成
+
+### 💡 Tip: Connect Claude to your IDE · /ide
+
+**功能说明**：
+使用 `/ide` 命令可以将 Claude Code 与你的 IDE（集成开发环境）连接，实现更高效的开发工作流。
+
+**启用方法**：
+```bash
+# 在 Claude Code 中运行
+/ide
+
+# 或者直接告诉 Claude
+"连接到我的 IDE"
+"设置 IDE 集成"
+```
+
+**支持的 IDE**：
+- Visual Studio Code (VS Code)
+- JetBrains IDEs (IntelliJ IDEA, WebStorm, PyCharm, etc.)
+- Cursor
+- Neovim
+- 其他支持 LSP 的编辑器
+
+### 核心功能
+
+**实时代码同步**：
+```
+功能：
+✓ Claude 可以直接访问 IDE 中打开的文件
+✓ 自动感知当前编辑的代码
+✓ 无需手动复制粘贴代码
+✓ 支持多文件同时编辑
+```
+
+**光标位置感知**：
+```
+场景：
+你在 IDE 中光标停在某个函数上
+
+Claude Code 中：
+"解释这个函数" → 自动识别光标位置的函数
+"重构这段代码" → 自动处理选中的代码
+"添加类型注解" → 精确定位到当前位置
+```
+
+**双向编辑**：
+```
+IDE → Claude Code:
+- Claude 可以读取 IDE 中的更改
+- 实时同步文件状态
+
+Claude Code → IDE:
+- Claude 的修改直接反映到 IDE
+- 支持 IDE 的撤销/重做
+- 保持 IDE 的历史记录
+```
+
+### 使用场景
+
+**场景 1: 快速代码审查**
+```
+[在 IDE 中打开文件并选中代码]
+
+Claude Code:
+用户: "审查这段代码"
+Claude: [自动识别选中的代码]
+        分析：
+        - 发现潜在的性能问题
+        - 建议使用更简洁的写法
+        - 提供重构建议
+```
+
+**场景 2: 上下文感知重构**
+```
+[在 IDE 中编辑 Button.tsx]
+
+Claude Code:
+用户: "将这个组件改为使用 hooks"
+Claude: [识别当前文件和项目结构]
+        - 自动分析依赖关系
+        - 重构组件逻辑
+        - 更新相关导入
+        - 保持代码风格一致
+```
+
+**场景 3: 多文件协作**
+```
+[在 IDE 中打开多个相关文件]
+
+Claude Code:
+用户: "统一这些文件的错误处理方式"
+Claude: [识别所有打开的文件]
+        处理：
+        - api/users.ts
+        - api/posts.ts
+        - api/comments.ts
+
+        统一使用 try-catch 包装器
+```
+
+**场景 4: 实时调试辅助**
+```
+[在 IDE 中调试代码，遇到问题]
+
+Claude Code:
+用户: "为什么这里会出现 undefined？"
+Claude: [读取当前文件和断点位置]
+        分析：
+        - 变量在此作用域未定义
+        - 建议在第 X 行添加初始化
+        - 提供修复代码
+```
+
+### 配置步骤
+
+**VS Code 集成**：
+```bash
+# 1. 启动 IDE 连接
+/ide
+
+# 2. 选择 VS Code
+→ Visual Studio Code
+
+# 3. VS Code 中会弹出授权提示
+→ 允许 Claude Code 访问
+
+# 4. 连接成功
+✓ Connected to VS Code
+✓ Workspace: /path/to/project
+✓ Open files: 3
+```
+
+**JetBrains 集成**：
+```bash
+# 1. 安装 Claude Code 插件
+Settings → Plugins → 搜索 "Claude Code"
+
+# 2. 在 Claude Code 中运行
+/ide
+
+# 3. 选择 IntelliJ/WebStorm/PyCharm
+→ JetBrains IDE
+
+# 4. 输入连接端口（默认 63342）
+→ 连接成功
+```
+
+**Neovim 集成**：
+```bash
+# 1. 安装 Neovim 插件
+# 使用你喜欢的插件管理器
+Plug 'anthropics/claude-code.nvim'
+
+# 2. 配置
+lua << EOF
+require('claude-code').setup({
+  enabled = true,
+  auto_connect = true,
+})
+EOF
+
+# 3. 在 Claude Code 中连接
+/ide
+→ Neovim
+```
+
+### 高级功能
+
+**项目上下文理解**：
+```
+连接 IDE 后，Claude 可以：
+✓ 自动识别项目类型（React, Vue, Node.js 等）
+✓ 理解项目结构和依赖关系
+✓ 遵循项目的代码规范
+✓ 识别使用的框架和库
+```
+
+**智能代码建议**：
+```
+基于 IDE 中的：
+- 当前文件
+- 打开的标签页
+- 项目配置
+- Git 状态
+
+Claude 提供：
+- 上下文相关的建议
+- 符合项目风格的代码
+- 自动导入管理
+- 类型智能提示
+```
+
+**工作区管理**：
+```bash
+# 查看连接状态
+"显示 IDE 连接状态"
+
+输出：
+┌─ IDE Connection ────────────────┐
+│ Editor: VS Code                 │
+│ Status: Connected               │
+│ Workspace: my-project           │
+│ Open Files: 5                   │
+│   - src/App.tsx                 │
+│   - src/utils/helper.ts         │
+│   - package.json                │
+│   - README.md                   │
+│   - tsconfig.json               │
+└─────────────────────────────────┘
+
+# 断开连接
+/ide disconnect
+
+# 重新连接
+/ide reconnect
+```
+
+### 使用技巧
+
+**最大化效率**：
+```
+1. 在 IDE 中打开相关文件
+   → Claude 自动获取上下文
+
+2. 选中需要处理的代码
+   → Claude 精确定位操作范围
+
+3. 使用自然语言描述需求
+   → Claude 基于 IDE 上下文理解
+
+4. 修改立即反映到 IDE
+   → 利用 IDE 的预览和撤销功能
+```
+
+**协同工作流**：
+```
+典型工作流程：
+
+1. IDE: 编写代码
+2. Claude Code: "检查这段代码有没有问题"
+3. IDE: 查看 Claude 的建议高亮
+4. Claude Code: "应用第二个建议"
+5. IDE: 自动更新代码
+6. IDE: Ctrl+Z 如果不满意
+7. 循环迭代直到满意
+```
+
+**多文件重构**：
+```
+场景：重构 API 调用方式
+
+1. IDE: 打开所有使用旧 API 的文件
+2. Claude Code: "将这些文件中的 API 调用
+   改为使用新的 fetch 包装器"
+3. Claude: 自动处理所有打开的文件
+4. IDE: 逐个预览更改
+5. IDE: 接受或回退每个更改
+```
+
+### 最佳实践
+
+**何时使用 IDE 集成**：
+```
+✅ 大型项目开发
+✅ 需要频繁在代码间切换
+✅ 重构多个相关文件
+✅ 需要实时代码反馈
+✅ 希望保持 IDE 工作流
+
+❌ 简单的单文件编辑
+❌ 学习基础 Claude Code 功能时
+❌ 网络受限环境
+```
+
+**性能优化**：
+```
+建议：
+✓ 只打开真正需要的文件
+✓ 关闭不相关的标签页
+✓ 大文件时具体指明修改位置
+✓ 定期清理 IDE 的缓存
+
+避免：
+✗ 同时打开几十个文件
+✗ 在非常大的文件中模糊操作
+✗ 频繁切换工作区
+```
+
+**安全注意事项**：
+```
+⚠️ IDE 集成会共享：
+- 打开文件的内容
+- 项目结构信息
+- 编辑器状态
+
+建议：
+✓ 在受信任的网络使用
+✓ 注意敏感文件（.env, secrets）
+✓ 可以临时关闭连接
+✓ 定期检查授权状态
+```
+
+### 故障排查
+
+**连接问题**：
+```
+问题: "无法连接到 IDE"
+
+解决：
+1. 确认 IDE 正在运行
+2. 检查防火墙设置
+3. 重启 IDE 和 Claude Code
+4. 查看 IDE 插件是否已启用
+
+# 检查连接
+/ide status
+
+# 查看详细日志
+/ide debug
+```
+
+**同步延迟**：
+```
+问题: "代码更改同步慢"
+
+解决：
+1. 关闭不需要的文件
+2. 检查网络连接
+3. 重新连接 IDE
+4. 清理 IDE 缓存
+
+# 强制同步
+/ide sync
+```
+
+**权限问题**：
+```
+问题: "Claude Code 无法修改文件"
+
+解决：
+1. 检查文件权限
+2. 重新授权 IDE 插件
+3. 确认文件未被其他程序锁定
+
+# 重新授权
+/ide reauthorize
+```
+
+### 快速参考
+
+**常用命令**：
+```bash
+/ide                  # 启动 IDE 连接
+/ide status           # 查看连接状态
+/ide disconnect       # 断开连接
+/ide reconnect        # 重新连接
+/ide sync             # 强制同步
+/ide debug            # 调试模式
+```
+
+**自然语言指令**：
+```
+"连接到我的 IDE"
+"显示 IDE 中打开的文件"
+"同步 IDE 状态"
+"断开 IDE 连接"
+"重新连接到编辑器"
+```
+
+### 相关资源
+
+- 📖 [VS Code 集成指南](https://docs.claude.com/claude-code/ide-integration/vscode)
+- 📖 [JetBrains 集成指南](https://docs.claude.com/claude-code/ide-integration/jetbrains)
+- 📖 [Neovim 插件文档](https://github.com/anthropics/claude-code.nvim)
+
+---
+
 ## 📚 相关资源
 
 - 📖 [Claude Code 官方文档](https://docs.claude.com/en/docs/claude-code/)
@@ -2268,6 +2650,7 @@ done
 | `/bashes` | 后台任务 |
 | `/terminal-setup` | 终端配置 |
 | `/resume` | 恢复历史会话 |
+| `/ide` | IDE 集成 |
 
 ### 会话管理 (`/resume`)
 
