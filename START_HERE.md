@@ -18,7 +18,7 @@
 → 使用命令查看进度：`/progress` 或查看 [学习记录.md](学习记录.md)
 
 ### 📌 遇到问题？
-→ 查看 [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) **（15+问题解决）**
+→ 查看 [references/TROUBLESHOOTING.md](references/TROUBLESHOOTING.md) **（15+问题解决）**
 
 ### 📌 需要参考？
 → 查看 [CHEATSHEET.md](CHEATSHEET.md) **（快速速查表）**
@@ -125,16 +125,16 @@ module-7/ - 综合实战 ⭐⭐⭐⭐⭐ 专家
 ```
 
 ### 📋 参考文档（按需查看）
-- **docs/CHEATSHEET.md** - 常用命令速查
-- **docs/TROUBLESHOOTING.md** - 故障排查（15+问题）
-- **docs/CLAUDE_CODE_STATUS.md** - 界面状态说明
-- **docs/CLAUDE_CODE_TIPS.md** - 技巧大全（4000+行）
+- **references/CHEATSHEET.md** - 常用命令速查
+- **references/TROUBLESHOOTING.md** - 故障排查（15+问题）
+- **references/CLAUDE_CODE_STATUS.md** - 界面状态说明
+- **references/CLAUDE_CODE_TIPS.md** - 技巧大全（4000+行）
 - **ROADMAP.md** - 可视化学习路线
 - **ASSESSMENT.md** - 学习评估体系
 
 ### 📦 高级内容
-- **docs/MCP_CONFIGURATION_REPORT.md** - MCP 配置记录
-- **docs/GITHUB_PAGES_OPTIMIZATION.md** - 网站优化记录
+- **references/MCP_CONFIGURATION_REPORT.md** - MCP 配置记录
+- **references/GITHUB_PAGES_OPTIMIZATION.md** - 网站优化记录
 - **FINAL_SUMMARY.md** - 项目总结
 
 ---
@@ -199,13 +199,13 @@ Week 6: 模块 7
 /tips
 
 # 查看故障排查
-cat docs/TROUBLESHOOTING.md
+cat references/TROUBLESHOOTING.md
 ```
 
 ### 常见问题
-- **Claude Code 无法启动？** → [故障排查 #1](docs/TROUBLESHOOTING.md)
-- **工具权限问题？** → [故障排查 #2](docs/TROUBLESHOOTING.md)
-- **Git 操作失败？** → [故障排查 #3-6](docs/TROUBLESHOOTING.md)
+- **Claude Code 无法启动？** → [故障排查 #1](references/TROUBLESHOOTING.md)
+- **工具权限问题？** → [故障排查 #2](references/TROUBLESHOOTING.md)
+- **Git 操作失败？** → [故障排查 #3-6](references/TROUBLESHOOTING.md)
 - **不知道学什么？** → 使用 `/progress` 命令
 
 ---

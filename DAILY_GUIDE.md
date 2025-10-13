@@ -280,7 +280,7 @@
 **学习内容**：
 - [ ] 阅读 `module-6/README.md` - MCP 部分
 - [ ] 了解 MCP 服务器生态
-- [ ] 查看 `docs/MCP_CONFIGURATION_REPORT.md`
+- [ ] 查看 `references/MCP_CONFIGURATION_REPORT.md`
 
 **练习**：
 - [ ] 配置 GitHub MCP
@@ -295,7 +295,7 @@
 **学习目标**：掌握 Agents 的使用
 
 **学习内容**：
-- [ ] 阅读 `docs/CLAUDE_CODE_TIPS.md` - Tip 15 Agents
+- [ ] 阅读 `references/CLAUDE_CODE_TIPS.md` - Tip 15 Agents
 - [ ] 了解 agent 类型和使用场景
 
 **练习**：
@@ -369,7 +369,7 @@
 /exercise
 
 # 或查看文档
-cat docs/TROUBLESHOOTING.md
+cat references/TROUBLESHOOTING.md
 cat CHEATSHEET.md
 ```
 

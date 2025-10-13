@@ -32,15 +32,15 @@
 ```
 claude-code-learning/
 ├── 📂 .claude/              # Claude Code 配置
-├── 📂 docs/                 # 参考文档（故障排查、技巧等）
-├── 📂 site/                 # 🌐 GitHub Pages 网站文件
+├── 📂 docs/                 # 🌐 GitHub Pages 网站文件
+├── 📂 references/           # 参考文档（故障排查、技巧等）
 ├── 📂 module-1/             # 模块 1：基础认知
 ├── 📂 module-2/             # 模块 2：核心工具
 ├── 📂 module-3/             # 模块 3：Git 集成
 ├── 📂 module-4/             # 模块 4：Slash Commands
-├── 📂 module-5/             # 模块 5：Hooks 自动化
-├── 📂 module-6/             # 模块 6：MCP 与 Agents
-├── 📂 module-7/             # 模块 7：实战项目
+├── 📂 module-5/             # Hooks 自动化
+├── 📂 module-6/             # MCP 与 Agents
+├── 📂 module-7/             # 实战项目
 ├── 📂 projects/             # 实战项目目录
 ├── 🎯 START_HERE.md         # ⭐ 唯一学习入口
 ├── 📅 DAILY_GUIDE.md        # 每日学习计划
@@ -179,8 +179,8 @@ cat START_HERE.md
 - 📅 [DAILY_GUIDE.md](./DAILY_GUIDE.md) - 每日学习计划
 - 📘 [LEARNING_PLAN.md](./LEARNING_PLAN.md) - 完整学习计划
 - 🚀 [QUICK_START.md](./QUICK_START.md) - 30分钟快速上手
-- 📊 [docs/ASSESSMENT.md](./docs/ASSESSMENT.md) - 学习进度评估
-- 🔧 [docs/TROUBLESHOOTING.md](./docs/TROUBLESHOOTING.md) - 常见问题解决
+- 📊 [references/ASSESSMENT.md](./references/ASSESSMENT.md) - 学习进度评估
+- 🔧 [references/TROUBLESHOOTING.md](./references/TROUBLESHOOTING.md) - 常见问题解决
 
 ### 官方资源
 - 📖 [Claude Code 官方文档](https://docs.claude.com/en/docs/claude-code/)
@@ -237,7 +237,7 @@ cat START_HERE.md
 
 ### 遇到问题？
 
-1. 📖 查看 [故障排查指南](./TROUBLESHOOTING.md)
+1. 📖 查看 [故障排查指南](./references/TROUBLESHOOTING.md)
 2. 💬 在项目 Issues 中提问
 3. 📚 阅读官方文档
 4. 🔍 搜索社区讨论
@@ -245,10 +245,10 @@ cat START_HERE.md
 
 ### 常见问题快速链接
 
-- [Claude Code 无法启动？](./docs/TROUBLESHOOTING.md#claude-code-无法启动)
-- [工具权限问题？](./docs/TROUBLESHOOTING.md#工具权限问题)
-- [MCP 连接失败？](./docs/TROUBLESHOOTING.md#mcp-服务器连接失败)
-- [Hooks 不执行？](./docs/TROUBLESHOOTING.md#hooks-不执行)
+- [Claude Code 无法启动？](./references/TROUBLESHOOTING.md#claude-code-无法启动)
+- [工具权限问题？](./references/TROUBLESHOOTING.md#工具权限问题)
+- [MCP 连接失败？](./references/TROUBLESHOOTING.md#mcp-服务器连接失败)
+- [Hooks 不执行？](./references/TROUBLESHOOTING.md#hooks-不执行)
 
 ## 🤝 贡献
 
