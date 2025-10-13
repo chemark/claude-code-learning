@@ -11,7 +11,13 @@
 [![在线阅读](https://img.shields.io/badge/在线阅读-GitHub_Pages-success)](https://chemark.github.io/claude-code-learning/)
 [![中文文档](https://img.shields.io/badge/文档-中文-red)](README.md)
 
-**📚 [在线阅读文档](https://chemark.github.io/claude-code-learning/)** | **⚡ [快速开始](./QUICK_START.md)** | **📖 [学习计划](./LEARNING_PLAN.md)**
+## 🎯 新用户从这里开始
+
+👉 **[START_HERE.md](./START_HERE.md)** ← **唯一学习入口，点击开始！**
+
+---
+
+**📚 [在线阅读文档](https://chemark.github.io/claude-code-learning/)** | **⚡ [快速开始](./QUICK_START.md)** | **📅 [每日学习](./DAILY_GUIDE.md)** | **📖 [学习计划](./LEARNING_PLAN.md)**
 
 ## 📖 关于本项目
 
@@ -132,37 +138,26 @@ Week 6: 模块 7
 
 ### 第一步：开始学习
 
-#### 选项 1: 30 分钟快速体验
 ```bash
-# 阅读快速入门指南
-cat QUICK_START.md
+# 阅读学习入口
+cat START_HERE.md
+
+# 或使用自定义命令
+/progress  # 查看学习进度
+/study module_number=1  # 开始模块1
 ```
 
-#### 选项 2: 从模块 1 开始
-```bash
-# 进入模块 1
-cd module-1
-
-# 阅读学习内容
-cat README.md
-
-# 开始练习
-# 按照 README 中的指引完成练习
-```
-
-#### 选项 3: 查看完整计划
-```bash
-# 查看详细学习计划
-cat LEARNING_PLAN.md
-```
+**推荐路径**：START_HERE.md → DAILY_GUIDE.md → module-1
 
 ## 📚 学习资源
 
 ### 核心文档
-- 📘 [完整学习计划](./LEARNING_PLAN.md) - 详细的课程大纲
-- 🚀 [快速开始指南](./QUICK_START.md) - 30分钟快速上手
-- 📊 [评估体系](./ASSESSMENT.md) - 学习进度评估
-- 🔧 [故障排查](./TROUBLESHOOTING.md) - 常见问题解决
+- 🎯 [START_HERE.md](./START_HERE.md) - **唯一学习入口**
+- 📅 [DAILY_GUIDE.md](./DAILY_GUIDE.md) - 每日学习计划
+- 📘 [LEARNING_PLAN.md](./LEARNING_PLAN.md) - 完整学习计划
+- 🚀 [QUICK_START.md](./QUICK_START.md) - 30分钟快速上手
+- 📊 [docs/ASSESSMENT.md](./docs/ASSESSMENT.md) - 学习进度评估
+- 🔧 [docs/TROUBLESHOOTING.md](./docs/TROUBLESHOOTING.md) - 常见问题解决
 
 ### 官方资源
 - 📖 [Claude Code 官方文档](https://docs.claude.com/en/docs/claude-code/)
@@ -227,10 +222,10 @@ cat LEARNING_PLAN.md
 
 ### 常见问题快速链接
 
-- [Claude Code 无法启动？](./TROUBLESHOOTING.md#claude-code-无法启动)
-- [工具权限问题？](./TROUBLESHOOTING.md#工具权限问题)
-- [MCP 连接失败？](./TROUBLESHOOTING.md#mcp-服务器连接失败)
-- [Hooks 不执行？](./TROUBLESHOOTING.md#hooks-不执行)
+- [Claude Code 无法启动？](./docs/TROUBLESHOOTING.md#claude-code-无法启动)
+- [工具权限问题？](./docs/TROUBLESHOOTING.md#工具权限问题)
+- [MCP 连接失败？](./docs/TROUBLESHOOTING.md#mcp-服务器连接失败)
+- [Hooks 不执行？](./docs/TROUBLESHOOTING.md#hooks-不执行)
 
 ## 🤝 贡献
 
@@ -300,7 +295,7 @@ MIT License - 详见 [LICENSE](./LICENSE) 文件
 
 **准备好了吗？开始你的 Claude Code 学习之旅吧！** 🚀
 
-👉 [开始快速体验](./QUICK_START.md) | [查看完整计划](./LEARNING_PLAN.md) | [进入模块 1](./module-1/README.md)
+👉 **[START_HERE - 开始学习](./START_HERE.md)** | [每日计划](./DAILY_GUIDE.md) | [快速体验](./QUICK_START.md) | [完整计划](./LEARNING_PLAN.md)
 
 ---
 
