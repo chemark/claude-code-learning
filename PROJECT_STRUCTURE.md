@@ -15,7 +15,7 @@ claude-code-learning/
 ├── 📋 参考手册
 │   ├── TROUBLESHOOTING.md           # 🔧 故障排查指南（15+常见问题）
 │   ├── ASSESSMENT.md                # 📊 学习评估体系
-│   └── 学习记录.md                  # 📓 个人学习记录模板
+│   └── QA_RECORD.md                  # 📓 个人学习记录模板
 │
 ├── 📄 项目报告（可选阅读）
 │   ├── FINAL_SUMMARY.md             # 🎉 最终项目总结
@@ -359,7 +359,7 @@ head -50 module-3/README.md
 
 ### 做好学习笔记
 
-在 `学习记录.md` 中记录：
+在 `QA_RECORD.md` 中记录：
 - 每日学习内容
 - 遇到的问题
 - 学到的技巧
