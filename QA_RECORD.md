@@ -278,3 +278,108 @@ IGNORE
 4. **跨项目一致性** - 统一的忽略规则
 
 ---
+
+## Q5: 可以把 LICENSE、.DS_Store、.gitignore 放进子文件夹简化根目录吗？
+
+**提问时间**: 2025-10-13
+
+**问题描述**: 希望将 LICENSE、.DS_Store、.gitignore 移到子文件夹以简化根目录
+
+**回答**:
+
+### 📋 逐个文件分析
+
+#### 1. **.gitignore** ❌ 不能移动
+
+**原因**：
+- 必须在**仓库根目录**才能生效
+- Git 从根目录读取这个文件来决定忽略哪些文件
+- 如果移到子目录，就只对那个子目录生效
+
+**结论**：必须保留在根目录
+
+#### 2. **LICENSE** ❌ 不建议移动
+
+**原因**：
+- GitHub/GitLab 等平台会自动识别**根目录的 LICENSE 文件**
+- 根目录的 LICENSE 会显示在仓库页面的右上角
+- 移到子目录后，平台无法自动识别开源许可证类型
+- 影响开源项目的合规性展示
+
+**结论**：强烈建议保留在根目录
+
+#### 3. **.DS_Store** ✅ 应该删除/隐藏
+
+**原因**：
+- 这是 macOS 系统文件，不应该出现在项目中
+- 已经配置了 Git 忽略，但文件系统中仍存在
+- 会在 VS Code 等编辑器中显示，造成视觉干扰
+
+**解决方案**：
+
+**步骤 1：删除所有 .DS_Store 文件**
+```bash
+find . -name ".DS_Store" -delete
+```
+
+**步骤 2：配置 VS Code 隐藏系统文件**
+
+创建 `.vscode/settings.json`:
+```json
+{
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true
+  }
+}
+```
+
+**步骤 3：确认防护措施**
+- ✅ .gitignore 包含 .DS_Store 规则
+- ✅ 全局 Git 配置忽略 .DS_Store
+- ✅ VS Code 不再显示系统文件
+
+### ✅ 执行结果
+
+**已完成**：
+- ✅ 删除了所有 .DS_Store 文件
+- ✅ 创建了 .vscode/settings.json 配置
+- ✅ VS Code 不再显示 .DS_Store 和 .git
+
+**保留在根目录**：
+- LICENSE - 必须保留（开源许可识别）
+- .gitignore - 必须保留（Git 功能要求）
+
+### 💡 根目录简化的最佳实践
+
+**可以考虑的其他方法**：
+
+1. **将文档移到 docs/ 目录**
+   - README.md 必须在根目录（GitHub 自动显示）
+   - 其他 .md 文档可以移到 docs/ 或 references/
+
+2. **使用 .vscode/settings.json 隐藏文件**
+   ```json
+   {
+     "files.exclude": {
+       "**/.DS_Store": true,
+       "**/.git": true,
+       "**/node_modules": true,
+       "**/.vscode": true
+     }
+   }
+   ```
+
+3. **项目文件分类**
+   - 配置文件：根目录（.gitignore, LICENSE）
+   - 文档文件：docs/ 或 references/
+   - 模块文件：module-1/ 到 module-7/
+   - 项目文件：projects/
+
+### 🎯 总结
+
+- ❌ **LICENSE 和 .gitignore 不能移动** - 影响功能和识别
+- ✅ **.DS_Store 应该删除** - 系统文件不属于项目
+- 💡 **使用 VS Code 配置** - 视觉上简化，而非物理移动
+
+---
