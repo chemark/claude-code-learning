@@ -27,6 +27,29 @@
 **难度等级**：入门 → 进阶 → 高级 → 实战
 **适合人群**：所有希望提升编程效率的开发者
 
+## 📁 项目结构
+
+```
+claude-code-learning/
+├── 📂 .claude/              # Claude Code 配置
+├── 📂 docs/                 # 参考文档（故障排查、技巧等）
+├── 📂 site/                 # 🌐 GitHub Pages 网站文件
+├── 📂 module-1/             # 模块 1：基础认知
+├── 📂 module-2/             # 模块 2：核心工具
+├── 📂 module-3/             # 模块 3：Git 集成
+├── 📂 module-4/             # 模块 4：Slash Commands
+├── 📂 module-5/             # 模块 5：Hooks 自动化
+├── 📂 module-6/             # 模块 6：MCP 与 Agents
+├── 📂 module-7/             # 模块 7：实战项目
+├── 📂 projects/             # 实战项目目录
+├── 🎯 START_HERE.md         # ⭐ 唯一学习入口
+├── 📅 DAILY_GUIDE.md        # 每日学习计划
+├── 🚀 QUICK_START.md        # 快速入门指南
+└── 📖 LEARNING_PLAN.md      # 完整学习计划
+```
+
+**在线阅读**：[https://chemark.github.io/claude-code-learning/](https://chemark.github.io/claude-code-learning/)
+
 ## 🎯 你将学到
 
 - ✅ Claude Code 的核心概念和工作原理
