@@ -425,7 +425,7 @@ ANTHROPIC_LOG=debug claude-code
 ## 📚 相关资源
 
 - [Claude Code 官方文档](https://docs.claude.com/en/docs/claude-code/)
-- [学习计划主文档](./LEARNING_PLAN.md)
+- [学习计划主文档](../guides/LEARNING_PLAN.md)
 - [故障排查指南](./TROUBLESHOOTING.md)
 
 ---

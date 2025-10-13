@@ -422,24 +422,24 @@ ls -la ~/.config/claude/
 ```bash
 README.md              # 项目概览
 LEARNING_PLAN.md       # 详细学习计划
-ROADMAP.md            # 学习路线图
+../guides/ROADMAP.md            # 学习路线图
 QUICK_START.md        # 快速入门
 TROUBLESHOOTING.md    # 故障排查
 ```
 
 ### 模块入口
 ```bash
-module-1/README.md    # 基础认知
-module-2/README.md    # 核心工具
-module-3/README.md    # Git 集成
+modules/module-1/README.md    # 基础认知
+modules/module-2/README.md    # 核心工具
+modules/module-3/README.md    # Git 集成
 # ... 其他模块
 ```
 
 ### 练习文件
 ```bash
-module-1/buggy-code.js                    # 调试练习
-module-2/refactor-example/shopping-cart.js # 重构练习
-module-3/conflict-practice/               # 冲突解决
+modules/module-1/buggy-code.js                    # 调试练习
+modules/module-2/refactor-example/shopping-cart.js # 重构练习
+modules/module-3/conflict-practice/               # 冲突解决
 ```
 
 ---

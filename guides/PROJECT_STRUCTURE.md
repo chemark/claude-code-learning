@@ -25,40 +25,40 @@ claude-code-learning/
 │   └── REVIEW_AND_IMPROVEMENTS.md   # 📈 评估与改进建议
 │
 ├── 🎓 学习模块（核心内容）
-│   ├── module-1/                    # 模块1：Claude Code 基础认知
+│   ├── modules/module-1/                    # 模块1：Claude Code 基础认知
 │   │   ├── README.md               # 学习内容和目标
 │   │   ├── CHECKLIST.md            # 完成检查清单
 │   │   └── buggy-code.js           # 练习：调试代码
 │   │
-│   ├── module-2/                    # 模块2：核心工具与工作流
+│   ├── modules/module-2/                    # 模块2：核心工具与工作流
 │   │   ├── README.md               # 学习内容
 │   │   ├── TASKS.md                # 练习任务
 │   │   └── refactor-example/       # 练习：代码重构
 │   │       └── shopping-cart.js
 │   │
-│   ├── module-3/                    # 模块3：Git 集成与版本控制
+│   ├── modules/module-3/                    # 模块3：Git 集成与版本控制
 │   │   ├── README.md               # 学习内容
 │   │   ├── EXERCISES.md            # 5大练习系列
 │   │   └── conflict-practice/      # 练习：解决Git冲突
 │   │       ├── README.md           # 冲突练习指南
 │   │       └── config.js           # 练习文件
 │   │
-│   ├── module-4/                    # 模块4：自定义扩展 I - Slash Commands
+│   ├── modules/module-4/                    # 模块4：自定义扩展 I - Slash Commands
 │   │   ├── README.md               # 学习内容（完整）
 │   │   ├── exercises/              # 练习目录
 │   │   └── examples/               # 示例代码
 │   │
-│   ├── module-5/                    # 模块5：自定义扩展 II - Hooks 与自动化
+│   ├── modules/module-5/                    # 模块5：自定义扩展 II - Hooks 与自动化
 │   │   ├── README.md               # 学习内容（完整）
 │   │   ├── exercises/              # 练习目录
 │   │   └── examples/               # 示例代码
 │   │
-│   ├── module-6/                    # 模块6：外部集成 - MCP 与 Sub-Agents
+│   ├── modules/module-6/                    # 模块6：外部集成 - MCP 与 Sub-Agents
 │   │   ├── README.md               # 学习内容（完整）
 │   │   ├── exercises/              # 练习目录
 │   │   └── examples/               # 示例代码
 │   │
-│   └── module-7/                    # 模块7：综合实战项目
+│   └── modules/module-7/                    # 模块7：综合实战项目
 │       ├── README.md               # 3个实战项目指南
 │       ├── exercises/              # 练习目录
 │       └── examples/               # 示例代码
@@ -75,10 +75,10 @@ claude-code-learning/
 │           └── tips.md             # /tips - 获取学习技巧
 │
 ├── 🗂️ 备份文件（可忽略）
-│   ├── module-4-old/               # 旧版模块4（已重写）
-│   ├── module-5-old/               # 旧版模块5（已重写）
-│   ├── module-6-old/               # 旧版模块6（已重写）
-│   └── module-7-old/               # 旧版模块7（已重写）
+│   ├── modules/module-4-old/               # 旧版模块4（已重写）
+│   ├── modules/module-5-old/               # 旧版模块5（已重写）
+│   ├── modules/module-6-old/               # 旧版模块6（已重写）
+│   └── modules/module-7-old/               # 旧版模块7（已重写）
 │
 └── 📦 实战项目目录
     └── projects/                    # 你的实战项目放这里
@@ -102,7 +102,7 @@ claude-code-learning/
 └─→ 📄 ROADMAP.md（可视化路线）
 
 第4步：开始学习模块1
-└─→ 📁 module-1/README.md
+└─→ 📁 modules/module-1/README.md
 
 第5步：遇到问题？
 ├─→ 📄 CHEATSHEET.md（快速参考）
@@ -114,7 +114,7 @@ claude-code-learning/
 #### 必读文档（⭐⭐⭐⭐⭐）
 1. **README.md** - 项目总览，了解学习计划的整体情况
 2. **LEARNING_PLAN.md** - 详细的学习路径和每个模块的内容
-3. **module-X/README.md** - 每个模块的具体学习内容
+3. **modules/module-X/README.md** - 每个模块的具体学习内容
 
 #### 常用参考（⭐⭐⭐⭐）
 1. **CHEATSHEET.md** - 速查表，常用命令和提示词模板
@@ -142,38 +142,38 @@ claude-code-learning/
 ```
 Week 1-2: 基础入门
 ├── 阅读 README.md + LEARNING_PLAN.md
-├── 完成 module-1（基础认知）
-└── 完成 module-2（核心工具）
+├── 完成 modules/module-1（基础认知）
+└── 完成 modules/module-2（核心工具）
 
 Week 3-4: 进阶应用
-├── 完成 module-3（Git集成）
+├── 完成 modules/module-3（Git集成）
 └── 参考 CHEATSHEET.md 加速学习
 
 Week 5-6: 高级特性
-├── 完成 module-4（Slash Commands）
-├── 完成 module-5（Hooks）
-└── 完成 module-6（MCP & Sub-Agents）
+├── 完成 modules/module-4（Slash Commands）
+├── 完成 modules/module-5（Hooks）
+└── 完成 modules/module-6（MCP & Sub-Agents）
 
 Week 7-8: 综合实战
-└── 完成 module-7（选择1个实战项目）
+└── 完成 modules/module-7（选择1个实战项目）
 ```
 
 ### 方案2：快速学习路径（2-3周）
 
 ```
 Day 1: 快速入门
-└── QUICK_START.md + module-1/README.md
+└── QUICK_START.md + modules/module-1/README.md
 
 Day 2-7: 核心技能
-├── module-2（核心工具）
-└── module-3（Git集成）
+├── modules/module-2（核心工具）
+└── modules/module-3（Git集成）
 
 Week 2: 高级特性速览
-├── module-4（Slash Commands，重点）
-└── module-5（Hooks，可选）
+├── modules/module-4（Slash Commands，重点）
+└── modules/module-5（Hooks，可选）
 
 Week 3: 实战练习
-└── module-7（选择1个小项目）
+└── modules/module-7（选择1个小项目）
 ```
 
 ### 方案3：深度学习路径（10-12周）
@@ -181,8 +181,8 @@ Week 3: 实战练习
 ```
 按照 LEARNING_PLAN.md 的完整计划：
 ├── 每个模块都完成所有练习
-├── 完成 module-7 的所有3个实战项目
-└── 参与开源贡献（module-7项目3）
+├── 完成 modules/module-7 的所有3个实战项目
+└── 参与开源贡献（modules/module-7项目3）
 ```
 
 ---
@@ -209,7 +209,7 @@ Week 3: 实战练习
 **适合**：遇到问题时查看
 **阅读时间**：按需查阅
 
-### 📁 module-X/
+### 📁 modules/module-X/
 **内容**：每个模块的学习内容、练习、检查清单
 **适合**：按顺序学习
 **完成时间**：每模块2-10小时不等
@@ -235,7 +235,7 @@ Week 3: 实战练习
 Claude Code：[扫描所有模块的检查清单，显示你的完成情况]
 
 你：/study module_number=1
-Claude Code：[打开module-1/README.md，开始引导学习]
+Claude Code：[打开modules/module-1/README.md，开始引导学习]
 ```
 
 ---
@@ -246,7 +246,7 @@ Claude Code：[打开module-1/README.md，开始引导学习]
 
 ### 备份文件
 ```bash
-rm -rf module-4-old module-5-old module-6-old module-7-old
+rm -rf modules/module-4-old modules/module-5-old modules/module-6-old modules/module-7-old
 ```
 
 ### 项目管理文档（保留1-2个即可）
@@ -299,7 +299,7 @@ projects/
 ### ✅ 推荐做法
 
 1. **按顺序学习**
-   - 从 module-1 到 module-7
+   - 从 modules/module-1 到 modules/module-7
    - 不要跳过基础模块
 
 2. **完成练习**
@@ -343,18 +343,18 @@ projects/
 grep -r "关键词" *.md
 
 # 查找某个工具的用法
-grep -r "Glob" module-*/README.md
+grep -r "Glob" modules/module-*/README.md
 
 # 查看某个模块的大纲
-head -50 module-3/README.md
+head -50 modules/module-3/README.md
 ```
 
 ### 使用 Claude Code 辅助学习
 
 ```
-"帮我总结 module-2 的核心内容"
-"生成 module-3 的学习笔记"
-"检查我在 module-1 的练习完成情况"
+"帮我总结 modules/module-2 的核心内容"
+"生成 modules/module-3 的学习笔记"
+"检查我在 modules/module-1 的练习完成情况"
 ```
 
 ### 做好学习笔记
@@ -400,7 +400,7 @@ cat README.md
 cat LEARNING_PLAN.md
 
 # 3. 开始模块1
-cd module-1
+cd modules/module-1
 cat README.md
 
 # 或使用自定义命令

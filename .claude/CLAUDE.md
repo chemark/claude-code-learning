@@ -23,8 +23,8 @@
 ```
 claude-code-learning/
 ├── README.md                    # 项目总览和快速开始
-├── LEARNING_PLAN.md             # 详细的7模块学习计划
-├── QUICK_START.md               # 30分钟快速入门
+├── guides/LEARNING_PLAN.md             # 详细的7模块学习计划
+├── guides/QUICK_START.md               # 30分钟快速入门
 ├── ASSESSMENT.md                # 学习评估体系
 ├── TROUBLESHOOTING.md           # 故障排查指南（15+问题）
 ├── .claude/                     # Claude Code 配置
@@ -115,10 +115,10 @@ claude-code-learning/
 cat README.md
 
 # 查看学习计划
-cat LEARNING_PLAN.md
+cat guides/LEARNING_PLAN.md
 
 # 快速开始
-cat QUICK_START.md
+cat guides/QUICK_START.md
 
 # 故障排查
 cat TROUBLESHOOTING.md
@@ -127,7 +127,7 @@ cat TROUBLESHOOTING.md
 ### 学习流程
 ```bash
 # 开始模块 1
-cd module-1
+cd modules/module-1
 cat README.md
 
 # 查看练习
@@ -199,7 +199,7 @@ cd ../module-2
 2. 添加 `README.md`（学习内容）
 3. 添加 `EXERCISES.md` 或 `TASKS.md`（练习）
 4. 创建练习文件和示例
-5. 更新 `LEARNING_PLAN.md`
+5. 更新 `guides/LEARNING_PLAN.md`
 
 ### 修复问题
 1. 在 TROUBLESHOOTING.md 中记录
@@ -255,8 +255,8 @@ cd ../module-2
 - [GitHub Issues](https://github.com/anthropics/claude-code/issues)
 
 ### 项目内部链接
-- 快速开始: `QUICK_START.md`
-- 学习计划: `LEARNING_PLAN.md`
+- 快速开始: `guides/QUICK_START.md`
+- 学习计划: `guides/LEARNING_PLAN.md`
 - 故障排查: `TROUBLESHOOTING.md`
 - 评估体系: `ASSESSMENT.md`
 

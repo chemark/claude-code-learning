@@ -697,7 +697,7 @@ tail -f ~/.config/claude/logs/hooks.log
 
 - [官方文档](https://docs.claude.com/en/docs/claude-code/)
 - [最佳实践指南](./BEST_PRACTICES.md)
-- [学习计划](./LEARNING_PLAN.md)
+- [学习计划](../guides/LEARNING_PLAN.md)
 - [GitHub Issues](https://github.com/anthropics/claude-code/issues)
 
 ---

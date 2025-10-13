@@ -871,7 +871,7 @@ Esc Esc
 
 - 📖 [Claude Code 官方文档](https://docs.claude.com/en/docs/claude-code/)
 - 🎯 [完整 Tips 文档](./CLAUDE_CODE_TIPS.md)
-- 🚀 [快速开始指南](./QUICK_START.md)
+- 🚀 [快速开始指南](../guides/QUICK_START.md)
 - 🔧 [故障排查](./TROUBLESHOOTING.md)
 
 ---

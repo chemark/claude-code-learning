@@ -17,7 +17,7 @@
 
 ---
 
-**📚 [在线阅读文档](https://chemark.github.io/claude-code-learning/)** | **⚡ [快速开始](./QUICK_START.md)** | **📅 [每日学习](./DAILY_GUIDE.md)** | **📖 [学习计划](./LEARNING_PLAN.md)**
+**📚 [在线阅读文档](https://chemark.github.io/claude-code-learning/)** | **⚡ [快速开始](./guides/QUICK_START.md)** | **📅 [每日学习](./guides/DAILY_GUIDE.md)** | **📖 [学习计划](./guides/LEARNING_PLAN.md)**
 
 ## 📖 关于本项目
 
@@ -43,9 +43,9 @@ claude-code-learning/
 ├── 📂 module-7/             # 实战项目
 ├── 📂 projects/             # 实战项目目录
 ├── 🎯 START_HERE.md         # ⭐ 唯一学习入口
-├── 📅 DAILY_GUIDE.md        # 每日学习计划
-├── 🚀 QUICK_START.md        # 快速入门指南
-└── 📖 LEARNING_PLAN.md      # 完整学习计划
+├── 📅 guides/DAILY_GUIDE.md        # 每日学习计划
+├── 🚀 guides/QUICK_START.md        # 快速入门指南
+└── 📖 guides/LEARNING_PLAN.md      # 完整学习计划
 ```
 
 **在线阅读**：[https://chemark.github.io/claude-code-learning/](https://chemark.github.io/claude-code-learning/)
@@ -63,13 +63,13 @@ claude-code-learning/
 
 ### 📚 第一阶段：基础入门（第 1-2 周）
 
-#### [模块 1：Claude Code 基础认知](./module-1/README.md)
+#### [模块 1：Claude Code 基础认知](./modules/module-1/README.md)
 - Claude Code 简介和安装
 - 交互模式基础
 - 有效提示词技巧
 - **练习**：创建第一个项目、代码分析
 
-#### [模块 2：核心工具与工作流](./module-2/README.md)
+#### [模块 2：核心工具与工作流](./modules/module-2/README.md)
 - 6 大核心工具详解（Read, Write, Edit, Glob, Grep, Bash）
 - 常见工作流程（重构、Bug修复、功能开发）
 - 项目导航技巧
@@ -77,13 +77,13 @@ claude-code-learning/
 
 ### 🔧 第二阶段：进阶功能（第 3-4 周）
 
-#### [模块 3：Git 集成与版本控制](./module-3/README.md)
+#### [模块 3：Git 集成与版本控制](./modules/module-3/README.md)
 - Git 操作与安全协议
 - 规范的提交信息生成
 - Pull Request 工作流
 - **练习**：Git 工作流、PR 创建、冲突解决
 
-#### [模块 4：自定义扩展 I - Slash Commands](./module-4/README.md)
+#### [模块 4：自定义扩展 I - Slash Commands](./modules/module-4/README.md)
 - Slash Commands 基础
 - 创建自定义命令
 - 高级命令技巧
@@ -91,13 +91,13 @@ claude-code-learning/
 
 ### 🎨 第三阶段：高级特性（第 5-6 周）
 
-#### [模块 5：自定义扩展 II - Hooks 与自动化](./module-5/README.md)
+#### [模块 5：自定义扩展 II - Hooks 与自动化](./modules/module-5/README.md)
 - Hooks 系统详解
 - 工作流自动化
 - 质量门禁配置
 - **练习**：质量检查 Hooks、自动化工作流
 
-#### [模块 6：外部集成 - MCP 与 Sub-Agents](./module-6/README.md)
+#### [模块 6：外部集成 - MCP 与 Sub-Agents](./modules/module-6/README.md)
 - MCP 协议与服务器
 - GitHub/数据库/文件系统集成
 - Sub-Agents 的使用
@@ -105,7 +105,7 @@ claude-code-learning/
 
 ### 🏆 第四阶段：实战项目（第 7-8 周）
 
-#### [模块 7：综合实战项目](./module-7/README.md)
+#### [模块 7：综合实战项目](./modules/module-7/README.md)
 - 项目 1：全栈待办事项应用
 - 项目 2：开源项目贡献
 - 项目 3：自动化 CLI 工具开发
@@ -170,15 +170,15 @@ cat START_HERE.md
 /study module_number=1  # 开始模块1
 ```
 
-**推荐路径**：START_HERE.md → DAILY_GUIDE.md → module-1
+**推荐路径**：START_HERE.md → guides/DAILY_GUIDE.md → module-1
 
 ## 📚 学习资源
 
 ### 核心文档
 - 🎯 [START_HERE.md](./START_HERE.md) - **唯一学习入口**
-- 📅 [DAILY_GUIDE.md](./DAILY_GUIDE.md) - 每日学习计划
-- 📘 [LEARNING_PLAN.md](./LEARNING_PLAN.md) - 完整学习计划
-- 🚀 [QUICK_START.md](./QUICK_START.md) - 30分钟快速上手
+- 📅 [guides/DAILY_GUIDE.md](./guides/DAILY_GUIDE.md) - 每日学习计划
+- 📘 [guides/LEARNING_PLAN.md](./guides/LEARNING_PLAN.md) - 完整学习计划
+- 🚀 [guides/QUICK_START.md](./guides/QUICK_START.md) - 30分钟快速上手
 - 📊 [references/ASSESSMENT.md](./references/ASSESSMENT.md) - 学习进度评估
 - 🔧 [references/TROUBLESHOOTING.md](./references/TROUBLESHOOTING.md) - 常见问题解决
 
@@ -318,7 +318,7 @@ MIT License - 详见 [LICENSE](./LICENSE) 文件
 
 **准备好了吗？开始你的 Claude Code 学习之旅吧！** 🚀
 
-👉 **[START_HERE - 开始学习](./START_HERE.md)** | [每日计划](./DAILY_GUIDE.md) | [快速体验](./QUICK_START.md) | [完整计划](./LEARNING_PLAN.md)
+👉 **[START_HERE - 开始学习](./START_HERE.md)** | [每日计划](./guides/DAILY_GUIDE.md) | [快速体验](./guides/QUICK_START.md) | [完整计划](./guides/LEARNING_PLAN.md)
 
 ---
 

@@ -9,10 +9,10 @@
 **你现在的情况是**：
 
 ### 📌 第一次来？
-→ 阅读 [QUICK_START.md](QUICK_START.md) **（30分钟快速上手）**
+→ 阅读 [guides/QUICK_START.md](guides/QUICK_START.md) **（30分钟快速上手）**
 
 ### 📌 要开始学习？
-→ 阅读 [DAILY_GUIDE.md](DAILY_GUIDE.md) **（按天学习计划）**
+→ 阅读 [guides/DAILY_GUIDE.md](guides/DAILY_GUIDE.md) **（按天学习计划）**
 
 ### 📌 继续学习？
 → 使用命令查看进度：`/progress` 或查看 [QA_RECORD.md](QA_RECORD.md)
@@ -29,7 +29,7 @@
 
 ### 如果是第 1 天
 ```bash
-cd module-1
+cd modules/module-1
 cat README.md
 
 # 或使用命令
@@ -108,9 +108,9 @@ cat README.md
 
 ### 🌟 核心学习文档（必读）
 - **START_HERE.md** ← 你在这里
-- **DAILY_GUIDE.md** - 每日学习计划（按天划分）
-- **QUICK_START.md** - 30分钟快速入门
-- **LEARNING_PLAN.md** - 完整学习路径
+- **guides/DAILY_GUIDE.md** - 每日学习计划（按天划分）
+- **guides/QUICK_START.md** - 30分钟快速入门
+- **guides/LEARNING_PLAN.md** - 完整学习路径
 - **QA_RECORD.md** - 你的学习日志
 
 ### 📖 学习模块（核心内容）
@@ -129,13 +129,13 @@ module-7/ - 综合实战 ⭐⭐⭐⭐⭐ 专家
 - **references/TROUBLESHOOTING.md** - 故障排查（15+问题）
 - **references/CLAUDE_CODE_STATUS.md** - 界面状态说明
 - **references/CLAUDE_CODE_TIPS.md** - 技巧大全（4000+行）
-- **ROADMAP.md** - 可视化学习路线
+- **guides/ROADMAP.md** - 可视化学习路线
 - **ASSESSMENT.md** - 学习评估体系
 
 ### 📦 高级内容
 - **references/MCP_CONFIGURATION_REPORT.md** - MCP 配置记录
 - **references/GITHUB_PAGES_OPTIMIZATION.md** - 网站优化记录
-- **FINAL_SUMMARY.md** - 项目总结
+- **guides/FINAL_SUMMARY.md** - 项目总结
 
 ---
 
@@ -228,14 +228,14 @@ cat references/TROUBLESHOOTING.md
 
 ### 第一步：快速了解（5分钟）
 ```bash
-cat QUICK_START.md
+cat guides/QUICK_START.md
 ```
 
 ### 第二步：开始第一个模块（2小时）
 ```bash
 /study module_number=1
 # 或
-cd module-1 && cat README.md
+cd modules/module-1 && cat README.md
 ```
 
 ### 第三步：记录你的学习

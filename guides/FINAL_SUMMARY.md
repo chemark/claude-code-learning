@@ -158,7 +158,7 @@ cat ROADMAP.md
 
 ### 3. 开始学习（持续）
 ```bash
-cd module-1
+cd modules/module-1
 cat README.md
 
 # 或使用自定义命令

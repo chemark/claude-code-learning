@@ -383,3 +383,298 @@ find . -name ".DS_Store" -delete
 - 💡 **使用 VS Code 配置** - 视觉上简化，而非物理移动
 
 ---
+
+## Q6: 可以将学习指南文档放进一个文件夹简化根目录吗？
+
+**提问时间**: 2025-10-13
+
+**问题描述**: 希望进一步简化根目录，将以下6个学习指南文档放进一个文件夹：
+- DAILY_GUIDE.md
+- FINAL_SUMMARY.md
+- LEARNING_PLAN.md
+- PROJECT_STRUCTURE.md
+- QUICK_START.md
+- ROADMAP.md
+
+**回答**:
+
+### ✅ 可以！创建 guides/ 文件夹
+
+这些文档都是**学习指南类文档**，完全可以归类到一个专门的文件夹中。
+
+### 📁 采用的方案
+
+**方案 A: 创建 `guides/` 文件夹** ⭐ 已采用
+
+**优点**：
+- 语义清晰：guides = 学习指南
+- 与 references/ (参考文档) 明确区分
+- 根目录只保留关键入口文件
+
+**新的目录结构**：
+
+```
+claude-code-learning/
+├── 📂 guides/                   # 📚 学习指南
+│   ├── DAILY_GUIDE.md          # 每日学习计划
+│   ├── LEARNING_PLAN.md        # 完整学习计划
+│   ├── QUICK_START.md          # 快速入门
+│   ├── ROADMAP.md              # 学习路线图
+│   ├── FINAL_SUMMARY.md        # 项目总结
+│   └── PROJECT_STRUCTURE.md    # 项目结构说明
+│
+├── 📂 references/               # 📚 参考文档
+├── 📂 docs/                     # 🌐 GitHub Pages
+├── 📂 module-1/ ~ module-7/    # 学习模块
+│
+├── 🎯 START_HERE.md            # ⭐ 唯一学习入口
+├── 📋 README.md                # GitHub 首页
+└── 📝 QA_RECORD.md             # 学习记录
+```
+
+### 🔧 执行的操作
+
+**1. 创建 guides/ 文件夹**
+```bash
+mkdir -p guides
+```
+
+**2. 移动 6 个文档**
+```bash
+git mv DAILY_GUIDE.md guides/
+git mv FINAL_SUMMARY.md guides/
+git mv LEARNING_PLAN.md guides/
+git mv PROJECT_STRUCTURE.md guides/
+git mv QUICK_START.md guides/
+git mv ROADMAP.md guides/
+```
+
+**3. 更新所有引用链接**
+
+更新了以下文件中的链接：
+- ✅ README.md - 顶部导航链接、学习资源链接、底部快速链接
+- ✅ START_HERE.md - 快速决策、文档地图、学习路径
+- ✅ .claude/CLAUDE.md - 项目结构、常用命令、相关资源
+- ✅ references/ 下所有文档 - 相关资源链接
+
+**链接格式**：
+- 从根目录引用：`./guides/LEARNING_PLAN.md`
+- 从 references/ 引用：`../guides/LEARNING_PLAN.md`
+
+### 📊 简化效果
+
+**简化前（根目录文件）**：
+```
+├── DAILY_GUIDE.md
+├── FINAL_SUMMARY.md
+├── LEARNING_PLAN.md
+├── LICENSE
+├── PROJECT_STRUCTURE.md
+├── QA_RECORD.md
+├── QUICK_START.md
+├── README.md
+├── ROADMAP.md
+├── START_HERE.md
+└── .gitignore
+```
+**11 个文件**
+
+**简化后（根目录文件）**：
+```
+├── guides/                      # 6个指南文档
+├── LICENSE
+├── QA_RECORD.md
+├── README.md
+├── START_HERE.md
+└── .gitignore
+```
+**5 个文件 + 1 个文件夹** ✨
+
+### 💡 文件分类逻辑
+
+| 文件夹 | 用途 | 示例文件 |
+|-------|------|---------|
+| **根目录** | 关键入口 | README.md, START_HERE.md, LICENSE |
+| **guides/** | 学习指南 | 学习计划、路线图、快速入门 |
+| **references/** | 参考文档 | 故障排查、技巧、速查表 |
+| **docs/** | 网站文件 | GitHub Pages 配置 |
+| **module-X/** | 学习模块 | 各模块的学习内容 |
+
+### 🎯 根目录现在保留的核心文件
+
+1. ✅ **README.md** - GitHub 首页（必须）
+2. ✅ **START_HERE.md** - 唯一学习入口（推荐保留）
+3. ✅ **QA_RECORD.md** - 你的学习记录
+4. ✅ **LICENSE** - 开源许可证（必须）
+5. ✅ **.gitignore** - Git 配置（必须）
+
+### ✨ 优势总结
+
+1. **根目录更整洁** - 从 11 个文件减少到 5 个文件
+2. **分类更清晰** - guides/ vs references/ vs docs/
+3. **导航更直观** - 文件夹名称一目了然
+4. **维护更方便** - 学习指南集中管理
+5. **扩展性更好** - 未来添加新指南文档有明确位置
+
+---
+
+## Q7: projects/ 文件夹是空的，可以把 7 个 module 文件夹放进去吗？
+
+**提问时间**: 2025-10-13
+
+**问题描述**: 发现 projects/ 文件夹是空的，希望将 module-1 到 module-7 这 7 个文件夹放进去并改名为 modules
+
+**回答**:
+
+### 📋 projects/ 文件夹的用途
+
+**projects/ 文件夹** 是为 **模块 7（综合实战项目）** 预留的，用于存放实战练习项目。
+
+从项目设计看：
+- **modules/module-7/** - 综合实战项目的**学习内容和指导**
+- **projects/** - 综合实战项目的**具体实战代码**
+
+### 💡 采用的方案
+
+**方案 A: 创建 `modules/` 文件夹** ⭐ 已采用
+
+**优点**：
+- ✅ 根目录更整洁（7 个 module 文件夹变成 1 个 modules 文件夹）
+- ✅ 保留 projects/ 为将来实战项目使用
+- ✅ modules/ 和 projects/ 分离清晰
+
+**新的目录结构**：
+
+```
+claude-code-learning/
+├── 📂 modules/              # 学习模块
+│   ├── module-1/            # 基础认知
+│   ├── module-2/            # 核心工具
+│   ├── module-3/            # Git 集成
+│   ├── module-4/            # Slash Commands
+│   ├── module-5/            # Hooks 自动化
+│   ├── module-6/            # MCP 与 Agents
+│   └── module-7/            # 实战项目指南
+│
+├── 📂 projects/             # 实战项目代码（预留）
+├── 📂 guides/               # 学习指南
+├── 📂 references/           # 参考文档
+├── 📂 docs/                 # GitHub Pages
+├── 📂 archive/              # 归档
+│
+├── START_HERE.md
+├── README.md
+├── QA_RECORD.md
+├── LICENSE
+└── .gitignore
+```
+
+### 🔧 执行的操作
+
+**1. 创建 modules/ 文件夹**
+```bash
+mkdir -p modules
+```
+
+**2. 移动 7 个模块文件夹**
+```bash
+git mv module-1 modules/
+git mv module-2 modules/
+git mv module-3 modules/
+git mv module-4 modules/
+git mv module-5 modules/
+git mv module-6 modules/
+git mv module-7 modules/
+```
+
+**3. 更新所有引用**
+
+更新了所有文档中对模块的引用：
+- ✅ README.md - 课程结构、模块链接
+- ✅ START_HERE.md - 学习模块路径
+- ✅ .claude/CLAUDE.md - 项目结构、学习流程
+- ✅ guides/ 下所有文档 - DAILY_GUIDE, QUICK_START, PROJECT_STRUCTURE 等
+- ✅ references/ 下所有文档 - CHEATSHEET 等
+
+**链接格式**：
+- 从根目录引用：`./modules/module-1/`
+- 从文档中引用：`modules/module-1/README.md`
+- cd 命令：`cd modules/module-1`
+
+### 📊 简化效果
+
+**简化前（根目录）**：
+```
+├── module-1/
+├── module-2/
+├── module-3/
+├── module-4/
+├── module-5/
+├── module-6/
+├── module-7/
+├── projects/
+├── guides/
+├── references/
+├── docs/
+├── archive/
+├── START_HERE.md
+├── README.md
+├── ...
+```
+**共 18 个文件夹/文件**
+
+**简化后（根目录）**：
+```
+├── modules/                 # 7个模块都在这里
+├── projects/
+├── guides/
+├── references/
+├── docs/
+├── archive/
+├── START_HERE.md
+├── README.md
+├── QA_RECORD.md
+├── LICENSE
+└── .gitignore
+```
+**共 11 个文件夹/文件** ✨
+
+### 💡 文件夹职责明确
+
+| 文件夹 | 用途 | 内容 |
+|-------|------|------|
+| **modules/** | 学习模块 | module-1 到 module-7 的学习内容 |
+| **projects/** | 实战项目 | 模块 7 的实战项目代码（预留） |
+| **guides/** | 学习指南 | 学习计划、路线图、快速入门 |
+| **references/** | 参考文档 | 故障排查、技巧、速查表 |
+| **docs/** | 网站文件 | GitHub Pages 配置 |
+| **archive/** | 归档 | 旧文件备份 |
+
+### ✨ 优势总结
+
+1. **根目录更整洁** - 从 18 个减少到 11 个条目
+2. **结构更清晰** - 每个文件夹职责明确
+3. **导航更直观** - modules/ 一目了然是学习模块
+4. **扩展性更好** - projects/ 预留给实战项目
+5. **维护更方便** - 模块集中管理，便于组织
+
+### 🎯 最终根目录结构
+
+**文件夹**（6 个）：
+- modules/ - 学习模块
+- projects/ - 实战项目
+- guides/ - 学习指南
+- references/ - 参考文档
+- docs/ - GitHub Pages
+- archive/ - 归档
+
+**文件**（5 个）：
+- START_HERE.md - 学习入口
+- README.md - GitHub 首页
+- QA_RECORD.md - 学习记录
+- LICENSE - 开源许可
+- .gitignore - Git 配置
+
+**总计**：6 个文件夹 + 5 个文件 = **11 个条目** 🎉
+
+---

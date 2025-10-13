@@ -290,8 +290,8 @@ touch MY_LEARNING_NOTES.md
 ### 项目内资源
 
 - 📘 [完整 Tips 文档](../CLAUDE_CODE_TIPS.md) - 20个使用技巧
-- 🚀 [快速开始](../QUICK_START.md) - 30分钟入门
-- 📖 [学习计划](../LEARNING_PLAN.md) - 7模块完整计划
+- 🚀 [快速开始](../guides/QUICK_START.md) - 30分钟入门
+- 📖 [学习计划](../guides/LEARNING_PLAN.md) - 7模块完整计划
 - 🔧 [故障排查](../TROUBLESHOOTING.md) - 常见问题解决
 
 ### 官方资源

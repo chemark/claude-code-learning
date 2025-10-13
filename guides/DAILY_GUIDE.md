@@ -26,7 +26,7 @@
 **学习目标**：了解 Claude Code 是什么，能做什么
 
 **学习内容**：
-- [ ] 阅读 `module-1/README.md` 前半部分
+- [ ] 阅读 `modules/module-1/README.md` 前半部分
 - [ ] 了解 Claude Code 的核心概念
 - [ ] 理解与传统 IDE 插件的区别
 
@@ -43,7 +43,7 @@
 **学习目标**：学会如何与 Claude Code 有效沟通
 
 **学习内容**：
-- [ ] 阅读 `module-1/README.md` 后半部分
+- [ ] 阅读 `modules/module-1/README.md` 后半部分
 - [ ] 学习提示词技巧
 - [ ] 了解如何提出清晰的请求
 
@@ -60,10 +60,10 @@
 **学习目标**：通过实际代码练习巩固基础
 
 **练习**：
-- [ ] 打开 `module-1/buggy-code.js`
+- [ ] 打开 `modules/module-1/buggy-code.js`
 - [ ] 让 Claude Code 分析代码问题
 - [ ] 请求代码优化建议
-- [ ] 完成 `module-1/CHECKLIST.md` 检查清单
+- [ ] 完成 `modules/module-1/CHECKLIST.md` 检查清单
 
 **命令辅助**：
 ```bash
@@ -81,7 +81,7 @@
 - [ ] 复习模块 1 的关键概念
 - [ ] 使用 `/review topic="模块1"` 复习
 - [ ] 记录学习笔记到 `QA_RECORD.md`
-- [ ] 确认完成 `module-1/CHECKLIST.md` 所有项目
+- [ ] 确认完成 `modules/module-1/CHECKLIST.md` 所有项目
 
 **用时**：每天 30 分钟
 
@@ -93,7 +93,7 @@
 **学习目标**：掌握文件读取和创建
 
 **学习内容**：
-- [ ] 阅读 `module-2/README.md` - Read 和 Write 部分
+- [ ] 阅读 `modules/module-2/README.md` - Read 和 Write 部分
 - [ ] 了解文件操作的最佳实践
 
 **练习**：
@@ -109,11 +109,11 @@
 **学习目标**：学会精确编辑现有文件
 
 **学习内容**：
-- [ ] 阅读 `module-2/README.md` - Edit 部分
+- [ ] 阅读 `modules/module-2/README.md` - Edit 部分
 - [ ] 了解 Edit vs Write 的区别
 
 **练习**：
-- [ ] 打开 `module-2/refactor-example/shopping-cart.js`
+- [ ] 打开 `modules/module-2/refactor-example/shopping-cart.js`
 - [ ] 使用 Edit 工具重构代码
 - [ ] 提取重复代码
 
@@ -125,7 +125,7 @@
 **学习目标**：掌握文件搜索和内容搜索
 
 **学习内容**：
-- [ ] 阅读 `module-2/README.md` - Glob 和 Grep 部分
+- [ ] 阅读 `modules/module-2/README.md` - Glob 和 Grep 部分
 - [ ] 学习搜索模式和正则表达式
 
 **练习**：
@@ -141,7 +141,7 @@
 **学习目标**：学会执行终端命令
 
 **学习内容**：
-- [ ] 阅读 `module-2/README.md` - Bash 部分
+- [ ] 阅读 `modules/module-2/README.md` - Bash 部分
 - [ ] 了解权限和安全协议
 
 **练习**：
@@ -157,7 +157,7 @@
 **学习目标**：综合使用所有工具
 
 **练习**：
-- [ ] 完成 `module-2/TASKS.md` 的所有练习
+- [ ] 完成 `modules/module-2/TASKS.md` 的所有练习
 - [ ] 项目导航练习
 - [ ] 代码重构实战
 
@@ -171,7 +171,7 @@
 **学习目标**：掌握 Claude Code 的 Git 操作
 
 **学习内容**：
-- [ ] 阅读 `module-3/README.md` - Git 基础部分
+- [ ] 阅读 `modules/module-3/README.md` - Git 基础部分
 - [ ] 学习提交信息规范
 - [ ] 了解 Git 安全协议
 
@@ -188,7 +188,7 @@
 **学习目标**：学会分支操作和 PR 创建
 
 **学习内容**：
-- [ ] 阅读 `module-3/README.md` - 分支和 PR 部分
+- [ ] 阅读 `modules/module-3/README.md` - 分支和 PR 部分
 
 **练习**：
 - [ ] 练习 3：分支管理
@@ -202,7 +202,7 @@
 ### 第 15 天：Git 工作流总结
 **任务**：
 - [ ] 复习 Git 工作流
-- [ ] 完成 `module-3/EXERCISES.md` 所有练习
+- [ ] 完成 `modules/module-3/EXERCISES.md` 所有练习
 - [ ] 记录 Git 操作技巧
 
 **用时**：1 小时
@@ -215,7 +215,7 @@
 **学习目标**：了解自定义命令的价值
 
 **学习内容**：
-- [ ] 阅读 `module-4/README.md`
+- [ ] 阅读 `modules/module-4/README.md`
 - [ ] 了解内置命令
 - [ ] 学习命令文件格式
 
@@ -246,7 +246,7 @@
 **学习目标**：掌握 Hooks 的工作原理
 
 **学习内容**：
-- [ ] 阅读 `module-5/README.md`
+- [ ] 阅读 `modules/module-5/README.md`
 - [ ] 了解不同类型的 Hooks
 - [ ] 学习安全性和权限控制
 
@@ -278,7 +278,7 @@
 **学习目标**：理解 MCP 协议和集成
 
 **学习内容**：
-- [ ] 阅读 `module-6/README.md` - MCP 部分
+- [ ] 阅读 `modules/module-6/README.md` - MCP 部分
 - [ ] 了解 MCP 服务器生态
 - [ ] 查看 `references/MCP_CONFIGURATION_REPORT.md`
 

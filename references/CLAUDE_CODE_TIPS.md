@@ -4182,8 +4182,8 @@ TodoWrite([
 ## 📚 相关资源
 
 - 📖 [Claude Code 官方文档](https://docs.claude.com/en/docs/claude-code/)
-- 🎓 [学习计划](./LEARNING_PLAN.md)
-- 🚀 [快速开始](./QUICK_START.md)
+- 🎓 [学习计划](../guides/LEARNING_PLAN.md)
+- 🚀 [快速开始](../guides/QUICK_START.md)
 - 🔧 [故障排查](./TROUBLESHOOTING.md)
 
 ---

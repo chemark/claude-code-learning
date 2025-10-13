@@ -868,7 +868,7 @@ Day 5-7: 经验总结
 ### 项目内资源
 - [命令学习目录](./README.md)
 - [完整 Tips](../CLAUDE_CODE_TIPS.md)
-- [学习计划](../LEARNING_PLAN.md)
+- [学习计划](../guides/LEARNING_PLAN.md)
 
 ---
 

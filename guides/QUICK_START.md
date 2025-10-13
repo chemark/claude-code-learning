@@ -319,7 +319,7 @@ Include:
 cat LEARNING_PLAN.md
 
 # 开始模块 1
-cd module-1
+cd modules/module-1
 cat README.md
 ```
 
