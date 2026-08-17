@@ -1,3 +1,5 @@
+
+
 # 🚀 Claude Code 完整学习计划
 
 > 系统学习 Claude Code，从基础到精通，通过实践掌握 AI 辅助编程的强大能力
@@ -165,7 +167,7 @@ Week 6: 模块 7
 # 阅读学习入口
 cat START_HERE.md
 
-# 或使用自定义命令
+# 或在 Claude Code 会话中使用自定义命令
 /progress  # 查看学习进度
 /study module_number=1  # 开始模块1
 ```
